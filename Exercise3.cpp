@@ -15,22 +15,21 @@ int main()
 			cout << country << endl;
 		}
 	}
-	else
+
+	for (int i = 0; i < sizeof(city) / sizeof(city[0]); i++)
 	{
-		for (int i = 0; i < sizeof(city) / sizeof(city[0]); i++)
+		if (input == city[i])
 		{
-			if (input == city[i])
-			{
-				cout << "인덱스: " << i << ", 나라이름: " << city[i] << endl;
-				break;
-			}
-			else
-			{
-				cout << "오류! 해당 나라이름은 존재하지 않습니다." << endl;
-				break;
-			}
+			cout << "인덱스: " << i << ", 나라이름: " << city[i] << endl;
+			break;
+		}
+		else
+		{
+			cout << "오류! 해당 나라이름은 존재하지 않습니다." << endl;
+			break;
 		}
 	}
+
 
 	return 0;
 }
