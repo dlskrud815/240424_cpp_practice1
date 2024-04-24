@@ -1,33 +1,31 @@
 ﻿#include <iostream>
 using namespace std;
 
-//함수명은 대문자로 시작
-int GetTen() //int형 변수 리턴
+void main()
 {
-	return 10; //int 10 리턴
-}
+	int intArray[5] = { 6, 7, 8, 9, 10 };
+	int arraySize = sizeof(intArray) / sizeof(intArray[0]);
 
-int IntSum(int n1, int n2)
-{
-	return n1 + n2;
-}
+	// for-each: 배열의 모든 요소를 처음부터 끝까지 탐색
+	int target_min = 2; // 인덱스 번호 최소값
+	int target_max = 4; // 인덱스 번호 최대값
+	int loop_count = 0;
 
+	for (int num : intArray) // 인덱스 0번부터, 1씩 증가
+	{
+		if (loop_count > target_min && loop_count < target_max)
+		{
+			cout << "for-each문 " << num << endl;
+		}
+		loop_count++;
+	}
+	for (int i = target_min + 1; i < target_max; i++)
+	{
+		cout << "for문 " << intArray[i] << endl;
+	}
 
-void PrintSomething(string message) //void형 ruturn x
-{
-	cout << message << endl;
-}
-
-int main() //cout 처리는 main문에서 처리하는 것이 이상적
-{
-	int num1, num2;
-
-	cin >> num1 >> num2;
-
-	int ten = GetTen(); //ten = 10;
-	int result = IntSum(num1, num2);
-
-	PrintSomething("안녕하세요:)");
-
-	return 0;
+	for (int i = 0; i < arraySize; i++)
+	{
+		cout << intArray[i] << endl;
+	}
 }
