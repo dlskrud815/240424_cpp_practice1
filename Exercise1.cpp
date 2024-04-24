@@ -29,7 +29,7 @@ float Divide(int num1, int num2)
 }
 
 /*
-float Divide(float num1, float num2)
+float Divide(float num1, float num2) //자동 형변환
 {
 	return num1 / num2;
 }
