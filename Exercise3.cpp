@@ -9,7 +9,7 @@ int main()
 	cout << "list를 입력해 나라를 확인하세요." << endl;
 
 	while (1) {
-		cout << "입력: ";
+		cout << endl << "입력: ";
 		cin >> input;
 
 		if (input == "-1")
