@@ -28,6 +28,13 @@ float Divide(int num1, int num2)
 	return (float)num1 / (float)num2; //강제 형변환
 }
 
+/*
+float Divide(float num1, float num2)
+{
+	return num1 / num2;
+}
+*/
+
 int main()
 {
 	int num1, num2;
