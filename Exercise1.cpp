@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 int Add(int num1, int num2)
@@ -25,7 +25,7 @@ int Mul(int num1, int num2)
 
 float Divide(int num1, int num2)
 {
-	return (float)num1 / (float)num2;
+	return (float)num1 / (float)num2; //강제 형변환
 }
 
 int main()
