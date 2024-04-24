@@ -25,7 +25,7 @@ int Mul(int num1, int num2)
 
 float Divide(int num1, int num2)
 {
-	return (float)num1 / (float)num2; //강제 형변환
+	return (float)num1 / (float)num2;
 }
 
 int main()
